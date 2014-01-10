@@ -39,7 +39,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.nameField.text = self.medication.name;
     self.dosageField.text = self.medication.dosage;
-    [self.alarmSwitch setOn:self.medication.done];
+    [self.alarmSwitch setOn:self.medication.alarmed];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,12 +51,12 @@
 
 - (IBAction)nameDataChanged:(id)sender {
     self.medication.name = self.nameField.text;
-    self.medication.done = self.alarmSwitch.isOn;
+    self.medication.alarmed = self.alarmSwitch.isOn;
     
 }
 
 - (IBAction)dosageDataChanged:(id)sender {
     self.medication.dosage = self.dosageField.text;
-    self.medication.done = self.alarmSwitch.isOn;
+    self.medication.alarmed = self.alarmSwitch.isOn;
 }
 @end

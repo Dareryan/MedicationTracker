@@ -14,7 +14,7 @@
 
 @synthesize dosage = _dosage;
 
-@synthesize done = _done;
+@synthesize alarmed = _alarmed;
 
 -(id)initWithName:(NSString *)name
            dosage:(NSString *)dosage
@@ -24,7 +24,7 @@
     if (self) {
         self.name = name;
         self.dosage = dosage;
-        self.done = done;
+        self.alarmed = done;
     }
     return self;
 }

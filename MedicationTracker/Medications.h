@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong)NSString *dosage;
 
-@property (nonatomic, assign) BOOL done;
+@property (nonatomic, assign) BOOL alarmed;
 
 -(id) initWithName: (NSString *) name
             dosage: (NSString*)dosage
