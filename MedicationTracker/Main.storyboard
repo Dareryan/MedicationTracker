@@ -36,9 +36,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="12f-gM-Lx2" kind="push" id="dZl-Me-ps0"/>
-                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Q39-jb-u4o" detailTextLabel="hCh-ZE-NnC" rowHeight="61" style="IBUITableViewCellStyleSubtitle" id="iWv-Md-CNN">
                                 <rect key="frame" x="0.0" y="147" width="320" height="61"/>
@@ -63,9 +60,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="12f-gM-Lx2" kind="push" id="6Qt-88-nuf"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -75,10 +69,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Medications" id="j5p-00-YpT">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="obK-5M-emo"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="obK-5M-emo">
+                            <connections>
+                                <segue destination="12f-gM-Lx2" kind="push" id="HhI-Ed-WKV"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="avl-YM-oL2">
                             <connections>
-                                <segue destination="JYF-eu-MPB" kind="modal" id="M89-fw-hKL"/>
+                                <segue destination="WtU-AR-U16" kind="push" id="hzF-oB-H2h"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -106,25 +104,6 @@
             </objects>
             <point key="canvasLocation" x="-959" y="182"/>
         </scene>
-        <!--AddMedicationNavController-->
-        <scene sceneID="STR-Zf-53r">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JYF-eu-MPB" userLabel="AddMedicationNavController" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3FK-b9-mTQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="WtU-AR-U16" kind="relationship" relationship="rootViewController" id="hBR-XC-7Br"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GCH-lZ-6F5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="123" y="-536"/>
-        </scene>
         <!--EditMedicationsTable-->
         <scene sceneID="csG-Lh-ZJR">
             <objects>
@@ -134,30 +113,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Name of Medication" id="4q4-c3-CBH">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="52b-eP-ogM">
-                                        <rect key="frame" x="0.0" y="119" width="320" height="52"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="52b-eP-ogM" id="Ih4-3c-W0k">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iqj-25-RpH">
-                                                    <rect key="frame" x="20" y="11" width="280" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                             <tableViewSection headerTitle="Dosage" id="iLj-Bv-ZMp">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="25x-on-Rlj">
-                                        <rect key="frame" x="0.0" y="219" width="320" height="52"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="25x-on-Rlj" id="Iua-Ag-7L6">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
@@ -177,7 +136,7 @@
                             <tableViewSection headerTitle=" " id="V22-wt-Jjt">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="LMA-Hl-k1J">
-                                        <rect key="frame" x="0.0" y="319" width="320" height="52"/>
+                                        <rect key="frame" x="0.0" y="219" width="320" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LMA-Hl-k1J" id="Amv-eI-SsL">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
@@ -202,7 +161,7 @@
                             <tableViewSection headerTitle=" " id="obz-nG-flF">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lAV-5r-mZ8">
-                                        <rect key="frame" x="0.0" y="419" width="320" height="52"/>
+                                        <rect key="frame" x="0.0" y="319" width="320" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lAV-5r-mZ8" id="wJc-cQ-D7q">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
@@ -373,13 +332,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add" id="KDa-WG-YFE">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4x1-Z0-2VV"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="0jt-BW-zas"/>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="AMC-RR-X0N"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGP-ga-Xbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="-536"/>
+            <point key="canvasLocation" x="123" y="-200"/>
         </scene>
         <!--AddMedicationsAlarm-->
         <scene sceneID="i20-qg-HyS">
@@ -436,7 +395,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YSn-fm-XPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="-536"/>
+            <point key="canvasLocation" x="550" y="-200"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -444,7 +403,4 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="dZl-Me-ps0"/>
-    </inferredMetricsTieBreakers>
 </document>
