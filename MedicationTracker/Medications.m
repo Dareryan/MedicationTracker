@@ -10,4 +10,21 @@
 
 @implementation Medications
 
+@synthesize name = _name;
+
+@synthesize done = _done;
+
+-(id)initWithName:(NSString *)name
+           dosage:(NSString *)dosage
+             done:(BOOL)done {
+    
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.dosage = dosage;
+        self.done = done;
+    }
+    return self;
+}
+
 @end

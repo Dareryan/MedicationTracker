@@ -7,12 +7,18 @@
 //
 
 #import "MedicationsListTableViewController.h"
+#import "Medications.h"
+#import "AddMedicationsTableViewController.h"
+#import "EditMedicationsTableViewController.h"
+
 
 @interface MedicationsListTableViewController ()
 
 @end
 
 @implementation MedicationsListTableViewController
+
+@synthesize medications = _medications;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,12 +38,24 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.medications = [[NSMutableArray alloc]init];
+}
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"AddMedicationsSegue" ]){
+        UINavigationController *navCon = segue.destinationViewController;
+#warning impliment AddMedicationsViewController
+    }
 }
 
 #pragma mark - Table view data source
@@ -118,4 +136,6 @@
  */
 
 
+- (IBAction)editButtonPressed:(id)sender {
+}
 @end

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MedicationsListTableViewController : UITableViewController
+@property (nonatomic, strong) NSMutableArray *medications;
+- (IBAction)editButtonPressed:(id)sender;
+
 
 @end

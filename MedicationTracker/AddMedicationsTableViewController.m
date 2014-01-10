@@ -7,12 +7,18 @@
 //
 
 #import "AddMedicationsTableViewController.h"
+#import "MedicationsListTableViewController.h"
+#import "Medications.h"
 
 @interface AddMedicationsTableViewController ()
 
 @end
 
 @implementation AddMedicationsTableViewController
+
+@synthesize nameField = _nameField;
+
+@synthesize medicationsListTableViewController = _medicationsListTableViewController;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -42,4 +48,14 @@
 
 
 
+- (IBAction)cancelButtonPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES
+                             completion:nil];
+}
+
+- (IBAction)doneButtonPressed:(id)sender {
+    Medications *newMedication = [[Medications alloc]initWithName:self.nameField.text dosage: self.dosageField.text done:NO];
+    [self.medicationsListTableViewController.medications addObject:newMedication];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

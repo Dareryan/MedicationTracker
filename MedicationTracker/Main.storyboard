@@ -75,10 +75,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Medications" id="j5p-00-YpT">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="obK-5M-emo"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="obK-5M-emo">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="W8X-gg-JPi" id="qex-oH-Pc8"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="avl-YM-oL2">
                             <connections>
-                                <segue destination="JYF-eu-MPB" kind="modal" id="M89-fw-hKL"/>
+                                <segue destination="JYF-eu-MPB" kind="modal" identifier="AddMedicationSegue" id="M89-fw-hKL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -384,9 +388,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add" id="KDa-WG-YFE">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4x1-Z0-2VV"/>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="AMC-RR-X0N"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4x1-Z0-2VV">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="WtU-AR-U16" id="AlZ-4F-J5l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="AMC-RR-X0N">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="WtU-AR-U16" id="Lno-OJ-aew"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dosageField" destination="rtC-7w-xCB" id="jVf-lf-rtd"/>
+                        <outlet property="nameField" destination="zaL-4g-W5c" id="MTf-DF-dbw"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGP-ga-Xbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

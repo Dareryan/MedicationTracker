@@ -10,4 +10,14 @@
 
 @interface Medications : NSObject
 
+@property (nonatomic,strong)NSString *name;
+
+@property (nonatomic, strong)NSString *dosage;
+
+@property (nonatomic, assign) BOOL done;
+
+-(id) initWithName: (NSString *) name
+            dosage: (NSString*)dosage
+              done:(BOOL) done;
+
 @end

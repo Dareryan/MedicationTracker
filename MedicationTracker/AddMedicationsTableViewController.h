@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+@class MedicationsListTableViewController;
+
 @interface AddMedicationsTableViewController : UITableViewController
+
+- (IBAction)cancelButtonPressed:(id)sender;
+
+- (IBAction)doneButtonPressed:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UITextField *nameField;
+
+@property (strong, nonatomic) IBOutlet UITextField *dosageField;
+
+@property (strong, nonatomic) MedicationsListTableViewController * medicationsListTableViewController;
+
+
+
 
 @end
