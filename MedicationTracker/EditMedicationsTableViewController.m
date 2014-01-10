@@ -51,6 +51,7 @@
 
 - (IBAction)nameDataChanged:(id)sender {
     self.medication.name = self.nameField.text;
+    
 }
 
 - (IBAction)dosageDataChanged:(id)sender {

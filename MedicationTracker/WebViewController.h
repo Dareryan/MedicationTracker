@@ -10,5 +10,6 @@
 
 @interface WebViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
+- (IBAction)doneButtonPressed:(id)sender;
 
 @end

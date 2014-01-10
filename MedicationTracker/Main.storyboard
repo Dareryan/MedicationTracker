@@ -74,7 +74,7 @@
                             <outlet property="delegate" destination="W8X-gg-JPi" id="hxT-rt-Hwb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Medications" id="j5p-00-YpT">
+                    <navigationItem key="navigationItem" title="Doses" id="j5p-00-YpT">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="obK-5M-emo">
                             <connections>
                                 <action selector="editButtonPressed:" destination="W8X-gg-JPi" id="qex-oH-Pc8"/>
@@ -241,9 +241,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="f4U-9d-Q7h">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="Zso-WY-cO1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Zso-WY-cO1">
                             <connections>
-                                <segue destination="UU5-Le-K9e" kind="push" id="SCE-f2-Ud4"/>
+                                <segue destination="UU5-Le-K9e" kind="modal" id="tWF-Vx-oRy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -334,26 +334,46 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <viewControllerLayoutGuide type="bottom" id="b5j-66-wNV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0cK-s0-iOE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DlE-oo-GUR">
-                                <rect key="frame" x="0.0" y="61" width="320" height="507"/>
+                                <rect key="frame" x="0.0" y="61" width="320" height="419"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HnY-tM-gNI">
+                                <rect key="frame" x="0.0" y="17" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="hZu-LW-Fbn">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="3gt-6V-1zo">
+                                            <connections>
+                                                <action selector="goBack" destination="DlE-oo-GUR" id="LWw-LQ-Rhu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="bLB-EM-GT2">
+                                            <connections>
+                                                <action selector="doneButtonPressed:" destination="UU5-Le-K9e" id="hHz-BE-jUr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k4h-Q1-bkG"/>
+                    <navigationItem key="navigationItem" id="k4h-Q1-bkG">
+                        <nil key="title"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="DlE-oo-GUR" id="7rS-z1-aVN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNZ-q2-A9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="270"/>
+            <point key="canvasLocation" x="674" y="418"/>
         </scene>
         <!--AddMedicationsTable-->
         <scene sceneID="6tK-Lv-MhJ">
