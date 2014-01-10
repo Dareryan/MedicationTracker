@@ -52,32 +52,46 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"AddMedicationsSegue" ]){
+    if ([segue.identifier isEqualToString:@"AddMedicationSegue" ]){
         UINavigationController *navCon = segue.destinationViewController;
-#warning impliment AddMedicationsViewController
+        AddMedicationsTableViewController *addMedicationsTableViewController = [navCon.viewControllers objectAtIndex:0];
+        addMedicationsTableViewController.medicationsListTableViewController = self;
+    }else if ([segue.identifier isEqualToString:@"EditAlarmOnTaskSegue"] || [segue.identifier isEqualToString:@"EditAlarmOffTaskSegue"]){
+        EditMedicationsTableViewController *editMedicationsTableViewController = segue.destinationViewController;
+        editMedicationsTableViewController.medication = [self.medications objectAtIndex:self.tableView.indexPathForSelectedRow.row];
     }
-}
+
+    }
+
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return self.medications.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *AlarmOnCellIdentifier = @"AlarmOnCell";
+    static NSString *AlarmOffCellIdentifier = @"AlarmOffCell";
+    
+    Medications *currentMedication = [self.medications objectAtIndex:indexPath.row];
+    
+    NSString *cellIdentifier = currentMedication.done ? AlarmOffCellIdentifier : AlarmOnCellIdentifier;
+    
+    
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     
@@ -93,7 +107,7 @@
  }
  */
 
-/*
+
  // Override to support editing the table view.
  - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
  {
@@ -105,23 +119,27 @@
  // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
  }
  }
- */
 
-/*
+
+
  // Override to support rearranging the table view.
  - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
  {
+     Medications *movedMedications = [self.medications objectAtIndex:fromIndexPath.row];
+     [self.medications removeObjectAtIndex: fromIndexPath.row];
+     [self.medications insertObject:movedMedications atIndex: toIndexPath.row];
+     
  }
- */
 
-/*
+
+
  // Override to support conditional rearranging of the table view.
  - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
  {
  // Return NO if you do not want the item to be re-orderable.
  return YES;
  }
- */
+
 
 /*
  #pragma mark - Navigation
@@ -135,7 +153,8 @@
  
  */
 
-
+#pragma mark – IBActions
 - (IBAction)editButtonPressed:(id)sender {
+    self.editing = !self.editing;
 }
 @end

@@ -18,6 +18,8 @@
 
 @synthesize nameField = _nameField;
 
+@synthesize dosageField = _dosageField;
+
 @synthesize medicationsListTableViewController = _medicationsListTableViewController;
 
 - (id)initWithStyle:(UITableViewStyle)style

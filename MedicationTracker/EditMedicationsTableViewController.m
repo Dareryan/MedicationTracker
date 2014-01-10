@@ -7,12 +7,17 @@
 //
 
 #import "EditMedicationsTableViewController.h"
+#import "Medications.h"
 
 @interface EditMedicationsTableViewController ()
 
 @end
 
 @implementation EditMedicationsTableViewController
+@synthesize nameField = _nameField;
+@synthesize dosageField = _dosageField;
+@synthesize alarmSwitch = _alarmSwitch;
+@synthesize medication = _medication;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -41,4 +46,11 @@
 }
 
 
+- (IBAction)nameDataChanged:(id)sender {
+    self.medication.name = self.nameField.text;
+}
+
+- (IBAction)dosageDataChanged:(id)sender {
+    self.medication.dosage = self.dosageField.text;
+}
 @end
