@@ -20,6 +20,13 @@
 		45293C87187F3AD200BC15AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45293C85187F3AD200BC15AB /* InfoPlist.strings */; };
 		45293C89187F3AD200BC15AB /* MedicationTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45293C88187F3AD200BC15AB /* MedicationTrackerTests.m */; };
 		45293C94187F3B0D00BC15AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45293C92187F3B0D00BC15AB /* Main.storyboard */; };
+		4594AE9E187F6AA400133D65 /* MedicationsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594AE9D187F6AA400133D65 /* MedicationsListTableViewController.m */; };
+		4594AEA1187F6AC300133D65 /* Medications.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594AEA0187F6AC300133D65 /* Medications.m */; };
+		4594AEA7187F6BAD00133D65 /* AddMedicationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594AEA6187F6BAD00133D65 /* AddMedicationsTableViewController.m */; };
+		4594AEAA187F6BF300133D65 /* EditMedicationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594AEA9187F6BF300133D65 /* EditMedicationsTableViewController.m */; };
+		4594AEAD187F6C2700133D65 /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594AEAC187F6C2700133D65 /* Alarm.m */; };
+		4594AEB0187F6C5900133D65 /* AddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594AEAF187F6C5900133D65 /* AddAlarmViewController.m */; };
+		4594AEB3187F6C6F00133D65 /* EditAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594AEB2187F6C6F00133D65 /* EditAlarmViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,20 @@
 		45293C86187F3AD200BC15AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45293C88187F3AD200BC15AB /* MedicationTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicationTrackerTests.m; sourceTree = "<group>"; };
 		45293C93187F3B0D00BC15AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../AlarmClock/AlarmClock/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4594AE9C187F6AA400133D65 /* MedicationsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationsListTableViewController.h; sourceTree = "<group>"; };
+		4594AE9D187F6AA400133D65 /* MedicationsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationsListTableViewController.m; sourceTree = "<group>"; };
+		4594AE9F187F6AC300133D65 /* Medications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medications.h; sourceTree = "<group>"; };
+		4594AEA0187F6AC300133D65 /* Medications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medications.m; sourceTree = "<group>"; };
+		4594AEA5187F6BAD00133D65 /* AddMedicationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMedicationsTableViewController.h; sourceTree = "<group>"; };
+		4594AEA6187F6BAD00133D65 /* AddMedicationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMedicationsTableViewController.m; sourceTree = "<group>"; };
+		4594AEA8187F6BF300133D65 /* EditMedicationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMedicationsTableViewController.h; sourceTree = "<group>"; };
+		4594AEA9187F6BF300133D65 /* EditMedicationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMedicationsTableViewController.m; sourceTree = "<group>"; };
+		4594AEAB187F6C2700133D65 /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
+		4594AEAC187F6C2700133D65 /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
+		4594AEAE187F6C5900133D65 /* AddAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAlarmViewController.h; sourceTree = "<group>"; };
+		4594AEAF187F6C5900133D65 /* AddAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAlarmViewController.m; sourceTree = "<group>"; };
+		4594AEB1187F6C6F00133D65 /* EditAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAlarmViewController.h; sourceTree = "<group>"; };
+		4594AEB2187F6C6F00133D65 /* EditAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAlarmViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +133,20 @@
 				45293C6C187F3AD200BC15AB /* AppDelegate.h */,
 				45293C6D187F3AD200BC15AB /* AppDelegate.m */,
 				45293C92187F3B0D00BC15AB /* Main.storyboard */,
+				4594AE9F187F6AC300133D65 /* Medications.h */,
+				4594AEA0187F6AC300133D65 /* Medications.m */,
+				4594AEAB187F6C2700133D65 /* Alarm.h */,
+				4594AEAC187F6C2700133D65 /* Alarm.m */,
+				4594AE9C187F6AA400133D65 /* MedicationsListTableViewController.h */,
+				4594AE9D187F6AA400133D65 /* MedicationsListTableViewController.m */,
+				4594AEA5187F6BAD00133D65 /* AddMedicationsTableViewController.h */,
+				4594AEA6187F6BAD00133D65 /* AddMedicationsTableViewController.m */,
+				4594AEA8187F6BF300133D65 /* EditMedicationsTableViewController.h */,
+				4594AEA9187F6BF300133D65 /* EditMedicationsTableViewController.m */,
+				4594AEAE187F6C5900133D65 /* AddAlarmViewController.h */,
+				4594AEAF187F6C5900133D65 /* AddAlarmViewController.m */,
+				4594AEB1187F6C6F00133D65 /* EditAlarmViewController.h */,
+				4594AEB2187F6C6F00133D65 /* EditAlarmViewController.m */,
 				45293C75187F3AD200BC15AB /* Images.xcassets */,
 				45293C64187F3AD200BC15AB /* Supporting Files */,
 			);
@@ -244,8 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4594AEB0187F6C5900133D65 /* AddAlarmViewController.m in Sources */,
+				4594AEA1187F6AC300133D65 /* Medications.m in Sources */,
+				4594AEAD187F6C2700133D65 /* Alarm.m in Sources */,
+				4594AEB3187F6C6F00133D65 /* EditAlarmViewController.m in Sources */,
 				45293C6E187F3AD200BC15AB /* AppDelegate.m in Sources */,
+				4594AE9E187F6AA400133D65 /* MedicationsListTableViewController.m in Sources */,
 				45293C6A187F3AD200BC15AB /* main.m in Sources */,
+				4594AEAA187F6BF300133D65 /* EditMedicationsTableViewController.m in Sources */,
+				4594AEA7187F6BAD00133D65 /* AddMedicationsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +496,7 @@
 				45293C8E187F3AD200BC15AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45293C8F187F3AD200BC15AB /* Build configuration list for PBXNativeTarget "MedicationTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +505,7 @@
 				45293C91187F3AD200BC15AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

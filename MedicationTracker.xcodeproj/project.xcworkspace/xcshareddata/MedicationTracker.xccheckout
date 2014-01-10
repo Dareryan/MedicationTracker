@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>466585A2-75BB-4F84-AB04-F1DDA8F476D8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MedicationTracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3BC0355A-5AA4-4BA9-AFDD-C56585C97018</key>
+		<string>https://github.com/joystate/AlarmClock.git</string>
+		<key>5C65FDBC-6A91-4FD4-B2DB-EAC350BF1B0C</key>
+		<string>https://github.com/Dareryan/MedicationTracker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MedicationTracker.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3BC0355A-5AA4-4BA9-AFDD-C56585C97018</key>
+		<string>../../../../../AlarmClock</string>
+		<key>5C65FDBC-6A91-4FD4-B2DB-EAC350BF1B0C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Dareryan/MedicationTracker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5C65FDBC-6A91-4FD4-B2DB-EAC350BF1B0C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3BC0355A-5AA4-4BA9-AFDD-C56585C97018</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AlarmClock</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5C65FDBC-6A91-4FD4-B2DB-EAC350BF1B0C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MedicationTracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
