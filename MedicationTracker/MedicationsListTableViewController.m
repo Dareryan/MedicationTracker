@@ -94,6 +94,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text = currentMedication.name;
+#warning Add alarm time here to cell subtitle
     
     return cell;
 }

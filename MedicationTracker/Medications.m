@@ -12,6 +12,8 @@
 
 @synthesize name = _name;
 
+@synthesize dosage = _dosage;
+
 @synthesize done = _done;
 
 -(id)initWithName:(NSString *)name

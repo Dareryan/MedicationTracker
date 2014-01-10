@@ -37,6 +37,9 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.nameField.text = self.medication.name;
+    self.dosageField.text = self.medication.dosage;
+    [self.alarmSwitch setOn:self.medication.done];
 }
 
 - (void)didReceiveMemoryWarning

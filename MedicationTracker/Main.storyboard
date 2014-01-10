@@ -70,8 +70,8 @@
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="W8X-gg-JPi" id="n7b-eZ-nq4"/>
-                            <outlet property="delegate" destination="W8X-gg-JPi" id="4aN-WI-Bal"/>
+                            <outlet property="dataSource" destination="W8X-gg-JPi" id="LMX-iS-ww4"/>
+                            <outlet property="delegate" destination="W8X-gg-JPi" id="hxT-rt-Hwb"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Medications" id="j5p-00-YpT">
@@ -90,7 +90,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n2K-bA-6eU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-414" y="182"/>
+            <point key="canvasLocation" x="-422" y="209"/>
         </scene>
         <!--MedicationsTableNavController-->
         <scene sceneID="YFe-M0-44D">
@@ -123,7 +123,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="WtU-AR-U16" kind="relationship" relationship="rootViewController" id="hBR-XC-7Br"/>
+                        <segue destination="WtU-AR-U16" kind="relationship" relationship="rootViewController" id="3sJ-Df-uAu"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCH-lZ-6F5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -411,8 +411,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="dosageField" destination="rtC-7w-xCB" id="jVf-lf-rtd"/>
-                        <outlet property="nameField" destination="zaL-4g-W5c" id="MTf-DF-dbw"/>
+                        <outlet property="dosageField" destination="rtC-7w-xCB" id="1Cu-sS-wpa"/>
+                        <outlet property="nameField" destination="zaL-4g-W5c" id="E7Y-Ls-pzs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGP-ga-Xbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
