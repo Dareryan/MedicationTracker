@@ -59,6 +59,7 @@
     Medications *newMedication = [[Medications alloc]initWithName:self.nameField.text dosage: self.dosageField.text done:NO];
     [self.medicationsListTableViewController.medications addObject:newMedication];
     [self dismissViewControllerAnimated:YES completion:nil];
-    NSLog(@"%@,%@",self.nameField,self.dosageField);
+    //enable following line to log name and dosage data to check status of medications mutable array
+    //NSLog(@"%@,%@",self.nameField,self.dosageField);
 }
 @end
