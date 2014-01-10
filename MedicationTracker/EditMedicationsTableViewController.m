@@ -51,10 +51,12 @@
 
 - (IBAction)nameDataChanged:(id)sender {
     self.medication.name = self.nameField.text;
+    self.medication.done = self.alarmSwitch.isOn;
     
 }
 
 - (IBAction)dosageDataChanged:(id)sender {
     self.medication.dosage = self.dosageField.text;
+    self.medication.done = self.alarmSwitch.isOn;
 }
 @end

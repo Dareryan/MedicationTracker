@@ -87,7 +87,7 @@
     
     Medications *currentMedication = [self.medications objectAtIndex:indexPath.row];
     
-    NSString *cellIdentifier = currentMedication.done ? AlarmOffCellIdentifier : AlarmOnCellIdentifier;
+    NSString *cellIdentifier = currentMedication.done ? AlarmOnCellIdentifier : AlarmOffCellIdentifier;
     
     
     

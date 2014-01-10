@@ -204,6 +204,10 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="arT-jI-MYo">
                                                     <rect key="frame" x="251" y="10" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="dosageDataChanged:" destination="12f-gM-Lx2" eventType="valueChanged" id="nPn-6H-1wU"/>
+                                                        <action selector="nameDataChanged:" destination="12f-gM-Lx2" eventType="valueChanged" id="yRh-dh-ItX"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -249,7 +253,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="alarmSwitch" destination="arT-jI-MYo" id="lXl-eY-rXZ"/>
+                        <outlet property="alarmSwitch" destination="arT-jI-MYo" id="sd1-KL-IAg"/>
                         <outlet property="dosageField" destination="1Dn-mf-U9a" id="uBL-Du-QFU"/>
                         <outlet property="nameField" destination="Iqj-25-RpH" id="cwd-OA-eX7"/>
                     </connections>
@@ -334,11 +338,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <viewControllerLayoutGuide type="bottom" id="b5j-66-wNV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0cK-s0-iOE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DlE-oo-GUR">
-                                <rect key="frame" x="0.0" y="61" width="320" height="419"/>
+                                <rect key="frame" x="0.0" y="61" width="320" height="507"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -367,13 +371,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <navigationItem key="navigationItem" id="k4h-Q1-bkG">
                         <nil key="title"/>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="webView" destination="DlE-oo-GUR" id="7rS-z1-aVN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNZ-q2-A9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="418"/>
+            <point key="canvasLocation" x="566" y="366"/>
         </scene>
         <!--AddMedicationsTable-->
         <scene sceneID="6tK-Lv-MhJ">
