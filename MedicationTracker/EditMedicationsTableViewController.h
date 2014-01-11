@@ -16,6 +16,8 @@
 @property (strong, nonatomic) Medications *medication;
 - (IBAction)nameDataChanged:(id)sender;
 - (IBAction)dosageDataChanged:(id)sender;
+- (IBAction)nameFieldKeyboardDismiss:(id)sender;
+- (IBAction)dosageFieldKeyboardDismiss:(id)sender;
 
 
 

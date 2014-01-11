@@ -62,4 +62,16 @@
     //enable following line to log name and dosage data to check status of medications mutable array
     //NSLog(@"%@,%@",self.nameField,self.dosageField);
 }
+
+- (IBAction)nameFieldKeyboardDismiss:(id)sender {
+    [self.nameField resignFirstResponder];
+}
+
+- (IBAction)dosageFieldKeyboardDismiss:(id)sender {
+    [self.dosageField resignFirstResponder];
+}
+
+
+
+
 @end

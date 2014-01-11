@@ -59,4 +59,12 @@
     self.medication.dosage = self.dosageField.text;
     self.medication.alarmed = self.alarmSwitch.isOn;
 }
+
+- (IBAction)nameFieldKeyboardDismiss:(id)sender {
+    [self.nameField resignFirstResponder];
+}
+
+- (IBAction)dosageFieldKeyboardDismiss:(id)sender {
+    [self.dosageField resignFirstResponder];
+}
 @end

@@ -155,6 +155,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="nameDataChanged:" destination="12f-gM-Lx2" eventType="editingChanged" id="RGp-am-kRZ"/>
+                                                        <action selector="nameFieldKeyboardDismiss:" destination="12f-gM-Lx2" eventType="editingDidEndOnExit" id="zE7-rs-TUh"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -178,6 +179,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="dosageDataChanged:" destination="12f-gM-Lx2" eventType="editingChanged" id="fyO-95-O9z"/>
+                                                        <action selector="dosageFieldKeyboardDismiss:" destination="12f-gM-Lx2" eventType="editingDidEndOnExit" id="ssB-Cf-6B2"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -403,6 +405,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="nameFieldKeyboardDismiss:" destination="WtU-AR-U16" eventType="editingDidEndOnExit" id="8pz-K3-qZD"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -423,6 +428,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="dosageFieldKeyboardDismiss:" destination="WtU-AR-U16" eventType="editingDidEnd" id="PHj-qt-xlh"/>
+                                                        <action selector="dosageFieldKeyboardDismiss:" destination="WtU-AR-U16" eventType="editingDidEndOnExit" id="vyB-vR-QqC"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -473,7 +482,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </navigationItem>
                     <connections>
                         <outlet property="dosageField" destination="rtC-7w-xCB" id="1Cu-sS-wpa"/>
-                        <outlet property="nameField" destination="zaL-4g-W5c" id="E7Y-Ls-pzs"/>
+                        <outlet property="nameField" destination="zaL-4g-W5c" id="9j0-A1-IjO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGP-ga-Xbu" userLabel="First Responder" sceneMemberID="firstResponder"/>

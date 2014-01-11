@@ -13,8 +13,9 @@
 @interface AddMedicationsTableViewController : UITableViewController
 
 - (IBAction)cancelButtonPressed:(id)sender;
-
 - (IBAction)doneButtonPressed:(id)sender;
+- (IBAction)nameFieldKeyboardDismiss:(id)sender;
+- (IBAction)dosageFieldKeyboardDismiss:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UITextField *nameField;
 
