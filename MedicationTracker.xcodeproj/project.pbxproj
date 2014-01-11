@@ -28,7 +28,6 @@
 		4594AEB3187F6C6F00133D65 /* EditAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594AEB2187F6C6F00133D65 /* EditAlarmViewController.m */; };
 		45E882C2187F886800DF50F2 /* iPhone 5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E882C1187F886800DF50F2 /* iPhone 5.storyboard */; };
 		45FDAEB51880625F008300A5 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FDAEB41880625F008300A5 /* WebViewController.m */; };
-		45FDAEB918810109008300A5 /* iPhone 4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FDAEB818810109008300A5 /* iPhone 4.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +74,6 @@
 		45E882C1187F886800DF50F2 /* iPhone 5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "iPhone 5.storyboard"; sourceTree = "<group>"; };
 		45FDAEB31880625F008300A5 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		45FDAEB41880625F008300A5 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		45FDAEB818810109008300A5 /* iPhone 4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "iPhone 4.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				45E882C1187F886800DF50F2 /* iPhone 5.storyboard */,
-				45FDAEB818810109008300A5 /* iPhone 4.storyboard */,
 				45293C6C187F3AD200BC15AB /* AppDelegate.h */,
 				45293C6D187F3AD200BC15AB /* AppDelegate.m */,
 				4594AE9F187F6AC300133D65 /* Medications.h */,
@@ -267,7 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E882C2187F886800DF50F2 /* iPhone 5.storyboard in Resources */,
-				45FDAEB918810109008300A5 /* iPhone 4.storyboard in Resources */,
 				45293C76187F3AD200BC15AB /* Images.xcassets in Resources */,
 				45293C68187F3AD200BC15AB /* InfoPlist.strings in Resources */,
 			);
