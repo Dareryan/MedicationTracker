@@ -247,10 +247,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="f4U-9d-Q7h">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Zso-WY-cO1">
-                            <connections>
-                                <segue destination="UU5-Le-K9e" kind="modal" id="tWF-Vx-oRy"/>
-                            </connections>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="2pi-Bb-S0s">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="94m-sg-7Au">
+                                <rect key="frame" x="282" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UU5-Le-K9e" kind="modal" id="V1k-A7-kxe"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -563,6 +571,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="dZl-Me-ps0"/>
+        <segue reference="6Qt-88-nuf"/>
     </inferredMetricsTieBreakers>
 </document>
