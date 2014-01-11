@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>CA3B9C1E-AAF9-4E32-85DD-E45A8BC108FB</string>
+	<string>6F1CC29B-CAC8-481F-941A-593F5F1C3523</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MedicationTracker</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5C65FDBC-6A91-4FD4-B2DB-EAC350BF1B0C</key>
-		<string>https://github.com/Dareryan/MedicationTracker.git</string>
+		<key>35BBF65E-9B84-4F37-8C8B-15B73A86DA2D</key>
+		<string>https://github.com/joystate/MedicationTracker.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MedicationTracker.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5C65FDBC-6A91-4FD4-B2DB-EAC350BF1B0C</key>
+		<key>35BBF65E-9B84-4F37-8C8B-15B73A86DA2D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Dareryan/MedicationTracker.git</string>
+	<string>https://github.com/joystate/MedicationTracker.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5C65FDBC-6A91-4FD4-B2DB-EAC350BF1B0C</string>
+	<string>35BBF65E-9B84-4F37-8C8B-15B73A86DA2D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5C65FDBC-6A91-4FD4-B2DB-EAC350BF1B0C</string>
+			<string>35BBF65E-9B84-4F37-8C8B-15B73A86DA2D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MedicationTracker</string>
 		</dict>
