@@ -152,7 +152,7 @@
                                                     <rect key="frame" x="20" y="11" width="280" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <connections>
                                                         <action selector="nameDataChanged:" destination="12f-gM-Lx2" eventType="editingChanged" id="RGp-am-kRZ"/>
                                                         <action selector="nameFieldKeyboardDismiss:" destination="12f-gM-Lx2" eventType="editingDidEndOnExit" id="zE7-rs-TUh"/>
@@ -176,7 +176,7 @@
                                                     <rect key="frame" x="20" y="11" width="280" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <connections>
                                                         <action selector="dosageDataChanged:" destination="12f-gM-Lx2" eventType="editingChanged" id="fyO-95-O9z"/>
                                                         <action selector="dosageFieldKeyboardDismiss:" destination="12f-gM-Lx2" eventType="editingDidEndOnExit" id="ssB-Cf-6B2"/>
@@ -247,7 +247,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="f4U-9d-Q7h">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="2pi-Bb-S0s">
+                        <barButtonItem key="rightBarButtonItem" id="2pi-Bb-S0s">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="94m-sg-7Au">
                                 <rect key="frame" x="282" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -418,7 +418,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                     <rect key="frame" x="20" y="11" width="280" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <connections>
                                                         <action selector="nameFieldKeyboardDismiss:" destination="WtU-AR-U16" eventType="editingDidEndOnExit" id="8pz-K3-qZD"/>
                                                     </connections>
@@ -441,7 +441,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                     <rect key="frame" x="20" y="11" width="280" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <connections>
                                                         <action selector="dosageFieldKeyboardDismiss:" destination="WtU-AR-U16" eventType="editingDidEnd" id="PHj-qt-xlh"/>
                                                         <action selector="dosageFieldKeyboardDismiss:" destination="WtU-AR-U16" eventType="editingDidEndOnExit" id="vyB-vR-QqC"/>
