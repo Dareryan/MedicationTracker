@@ -56,6 +56,7 @@
         UINavigationController *navCon = segue.destinationViewController;
         AddMedicationsTableViewController *addMedicationsTableViewController = [navCon.viewControllers objectAtIndex:0];
         addMedicationsTableViewController.medicationsListTableViewController = self;
+
     }else if ([segue.identifier isEqualToString:@"EditAlarmOnTaskSegue"] || [segue.identifier isEqualToString:@"EditAlarmOffTaskSegue"]){
         EditMedicationsTableViewController *editMedicationsTableViewController = segue.destinationViewController;
         editMedicationsTableViewController.medication = [self.medications objectAtIndex:self.tableView.indexPathForSelectedRow.row];
@@ -68,37 +69,40 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
-    return self.medications.count;
+    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *AlarmOnCellIdentifier = @"AlarmOnCell";
-    static NSString *AlarmOffCellIdentifier = @"AlarmOffCell";
+    static NSString *CellIdentifier = @"AlarmOnCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    Medications *currentMedication = [self.medications objectAtIndex:indexPath.row];
+    // Get list of local notifications
+    NSArray *localNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    UILocalNotification *localNotification = [localNotifications objectAtIndex:indexPath.row];
     
-    NSString *cellIdentifier = currentMedication.alarmed ? AlarmOnCellIdentifier : AlarmOffCellIdentifier;
+    // Display notification info
+    [cell.textLabel setText:localNotification.alertBody];
     
+    //format date and time
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    df.timeZone = [NSTimeZone defaultTimeZone];
+    df.timeStyle = NSDateFormatterShortStyle;
+    df.dateStyle = NSDateFormatterShortStyle;
+    NSString *dateTimeString = [df stringFromDate:localNotification.fireDate];
     
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    cell.textLabel.text = currentMedication.name;
-#warning Add alarm time here to cell subtitle
+    [cell.detailTextLabel setText:dateTimeString];
     
     return cell;
 }
+
 
 /*
  // Override to support conditional editing of the table view.
@@ -111,53 +115,53 @@
 
 
  // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
-     [self.medications removeObjectAtIndex:indexPath.row];
-     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
-
-
-
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
-     Medications *movedMedications = [self.medications objectAtIndex:fromIndexPath.row];
-     [self.medications removeObjectAtIndex: fromIndexPath.row];
-     [self.medications insertObject:movedMedications atIndex: toIndexPath.row];
-     
- }
-
-
-
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
-
-
-/*
- #pragma mark - Navigation
- 
- // In a story board-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- 
- */
-
-#pragma mark – IBActions
-- (IBAction)editButtonPressed:(id)sender {
-    self.editing = !self.editing;
-}
+// - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+// {
+// if (editingStyle == UITableViewCellEditingStyleDelete) {
+// // Delete the row from the data source
+//     [self.medications removeObjectAtIndex:indexPath.row];
+//     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+// }
+// else if (editingStyle == UITableViewCellEditingStyleInsert) {
+// // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+// }
+// }
+//
+//
+//
+// // Override to support rearranging the table view.
+// - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+// {
+//     Medications *movedMedications = [self.medications objectAtIndex:fromIndexPath.row];
+//     [self.medications removeObjectAtIndex: fromIndexPath.row];
+//     [self.medications insertObject:movedMedications atIndex: toIndexPath.row];
+//     
+// }
+//
+//
+//
+// // Override to support conditional rearranging of the table view.
+// - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+// {
+// // Return NO if you do not want the item to be re-orderable.
+// return YES;
+// }
+//
+//
+///*
+// #pragma mark - Navigation
+// 
+// // In a story board-based application, you will often want to do a little preparation before navigation
+// - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+// {
+// // Get the new view controller using [segue destinationViewController].
+// // Pass the selected object to the new view controller.
+// }
+// 
+// */
+//
+//#pragma mark – IBActions
+//- (IBAction)editButtonPressed:(id)sender {
+//    self.editing = !self.editing;
+//}
 @end

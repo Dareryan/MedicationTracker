@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AddMedicationsTableViewController.h"
 
 @interface Alarm : NSObject
+
+-(void)setNotification:(UIDatePicker *)datePicker withFrequency:(NSCalendarUnit) interval;
+//    withMedicationName:(UITextField *)medication withMedicationDose:(UITextField *)dose;
 
 @end

@@ -60,7 +60,7 @@
     [self.medicationsListTableViewController.medications addObject:newMedication];
     [self dismissViewControllerAnimated:YES completion:nil];
     //enable following line to log name and dosage data to check status of medications mutable array
-    //NSLog(@"%@,%@",self.nameField,self.dosageField);
+//    NSLog(@"%@,%@",self.nameField,self.dosageField);
 }
 
 - (IBAction)nameFieldKeyboardDismiss:(id)sender {

@@ -10,4 +10,22 @@
 
 @implementation Alarm
 
+//setting a notification
+-(void)setNotification:(UIDatePicker *)datePicker withFrequency:(NSCalendarUnit) interval
+{
+    AddMedicationsTableViewController *view = [[AddMedicationsTableViewController alloc] init];
+    
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [datePicker date];
+    localNotification.repeatInterval = interval;
+
+    localNotification.alertBody = [NSString stringWithFormat:@"Take %@ at dose %@", view.nameField.text, view.dosageField.text];
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+}
+
+
 @end
