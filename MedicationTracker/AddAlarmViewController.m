@@ -50,6 +50,7 @@
     NSLog(@"%@",dateTimeString);
     
     [self scheduleLocalNotificationWithDate:self.dateTimePicker.date];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
@@ -60,6 +61,7 @@
     notification.alertBody = @"Alarm";
     // notification.soundName = "Insert Sound File"
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+    
 }
 
 
