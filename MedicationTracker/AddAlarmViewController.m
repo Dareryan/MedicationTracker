@@ -50,8 +50,7 @@
     NSLog(@"%@",dateTimeString);
     
     [self scheduleLocalNotificationWithDate:self.dateTimePicker.date];
-    
-   
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
