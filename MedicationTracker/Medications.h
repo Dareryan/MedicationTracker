@@ -18,6 +18,6 @@
 
 -(id) initWithName: (NSString *) name
             dosage: (NSString*)dosage
-              done:(BOOL) done;
+              alarm:(BOOL) alarmed;
 
 @end

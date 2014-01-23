@@ -16,6 +16,7 @@
 - (IBAction)doneButtonPressed:(id)sender;
 - (IBAction)nameFieldKeyboardDismiss:(id)sender;
 - (IBAction)dosageFieldKeyboardDismiss:(id)sender;
+- (IBAction)setAlarmButtonPressed:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UITextField *nameField;
 

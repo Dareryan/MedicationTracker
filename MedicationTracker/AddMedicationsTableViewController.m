@@ -56,7 +56,7 @@
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    Medications *newMedication = [[Medications alloc]initWithName:self.nameField.text dosage: self.dosageField.text done:NO];
+    Medications *newMedication = [[Medications alloc]initWithName:self.nameField.text dosage: self.dosageField.text alarm:NO];
     [self.medicationsListTableViewController.medications addObject:newMedication];
     [self dismissViewControllerAnimated:YES completion:nil];
     //enable following line to log name and dosage data to check status of medications mutable array
@@ -69,6 +69,12 @@
 
 - (IBAction)dosageFieldKeyboardDismiss:(id)sender {
     [self.dosageField resignFirstResponder];
+}
+
+- (IBAction)setAlarmButtonPressed:(id)sender {
+   Medications *newMedication = [[Medications alloc]initWithName:self.nameField.text dosage: self.dosageField.text alarm:NO];
+    [self.medicationsListTableViewController.medications addObject:newMedication];
+   
 }
 
 

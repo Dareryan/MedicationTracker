@@ -46,4 +46,11 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"Notificatiom received");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Alert" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
+    
+}
 @end

@@ -95,7 +95,7 @@
     
     // Configure the cell...
     cell.textLabel.text = currentMedication.name;
-#warning Add alarm time here to cell subtitle
+    #warning Add alarm time here to cell subtitle
     
     return cell;
 }
@@ -131,6 +131,7 @@
      Medications *movedMedications = [self.medications objectAtIndex:fromIndexPath.row];
      [self.medications removeObjectAtIndex: fromIndexPath.row];
      [self.medications insertObject:movedMedications atIndex: toIndexPath.row];
+     
      
  }
 
