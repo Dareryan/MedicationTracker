@@ -379,6 +379,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             <action selector="goBack" destination="DlE-oo-GUR" id="4E8-Ee-YgF"/>
                                         </connections>
                                     </barButtonItem>
+
                                     <barButtonItem width="228" style="plain" systemItem="fixedSpace" id="Uvc-de-SQt"/>
                                     <barButtonItem style="plain" systemItem="fastForward" id="wkw-KD-EO5">
                                         <connections>
@@ -475,6 +476,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                     </state>
                                                     <connections>
                                                         <action selector="setAlarmButtonPressed:" destination="WtU-AR-U16" eventType="touchUpInside" id="DT9-au-wML"/>
+
                                                         <segue destination="oGx-G9-NVe" kind="push" id="xgd-hh-O1Z"/>
                                                     </connections>
                                                 </button>

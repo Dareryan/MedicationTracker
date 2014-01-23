@@ -57,6 +57,7 @@
     
     [self scheduleLocalNotificationWithDate:self.dateTimePicker.date];
     
+
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alarm Set" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
     [alert show];
    
@@ -69,8 +70,7 @@
     notification.alertBody = @"Alarm";
     // notification.soundName = "Insert Sound File"
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-    
-   
+
 }
 
 
