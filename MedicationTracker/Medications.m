@@ -16,26 +16,32 @@
 
 @synthesize alarmed = _alarmed;
 
+@synthesize alarmTime = _alarmTime;
+
 -(id)init
 {
     
     self = [super init];
     if (self)
     {
-        self = [self initWithName:@"" dosage:@"" alarm:NO];
+        self = [self initWithName:@"" dosage:@"" alarm:NO alarmTime:@""];
     }
     return self;
 }
 
 -(id)initWithName:(NSString *)name
            dosage:(NSString *)dosage
-             alarm:(BOOL)alarmed {
+             alarm:(BOOL)alarmed
+        alarmTime:(NSString *)alarmTime
+
+{
     
     self = [super init];
     if (self) {
         self.name = name;
         self.dosage = dosage;
         self.alarmed = alarmed;
+        self.alarmTime = alarmTime;
     }
     return self;
 }

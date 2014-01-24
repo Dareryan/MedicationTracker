@@ -95,6 +95,7 @@
     
     // Configure the cell...
     cell.textLabel.text = currentMedication.name;
+    cell.detailTextLabel.text = currentMedication.alarmTime;
     #warning Add alarm time here to cell subtitle
     
     return cell;
